@@ -326,6 +326,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libaedv \
+    libbluetooth_audio_session_mediatek \
     libbwc \
     libfile_op \
     libion_mtk \
@@ -338,6 +339,8 @@ PRODUCT_PACKAGES += \
     libnvram \
     libnvram_sec \
     libverno \
+    vendor.mediatek.hardware.bluetooth.audio@2.1 \
+    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     audio.primary.mt6781 \
     audio.r_submix.mt6781 \
     sound_trigger.primary.default \
