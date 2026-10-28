@@ -11,11 +11,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sea/proprietary/vendor/etc/MBrain_dynamic.ds:$(TARGET_COPY_OUT_VENDOR)/etc/MBrain_dynamic.ds \
     vendor/xiaomi/sea/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/VideoLog_dynamic.ds:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.ds \
-    vendor/xiaomi/sea/proprietary/vendor/etc/aconfig_flags.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aconfig_flags.pb \
-    vendor/xiaomi/sea/proprietary/vendor/etc/aidl/hfp/hfp_codec_capabilities.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/hfp/hfp_codec_capabilities.xml \
-    vendor/xiaomi/sea/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs \
+    vendor/xiaomi/sea/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
+    vendor/xiaomi/sea/proprietary/vendor/etc/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.json \
-    vendor/xiaomi/sea/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs \
     vendor/xiaomi/sea/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.json \
     vendor/xiaomi/sea/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2442:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2442 \
     vendor/xiaomi/sea/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2442_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2442_ENUM \
@@ -149,7 +147,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sea/proprietary/vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
-    vendor/xiaomi/sea/proprietary/vendor/etc/breakwhiteapplist.xml:$(TARGET_COPY_OUT_VENDOR)/etc/breakwhiteapplist.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/camera/LDC_packdata_xiaomi_v1.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/LDC_packdata_xiaomi_v1.dat \
     vendor/xiaomi/sea/proprietary/vendor/etc/camera/LDC_packdata_xiaomi_v2.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/LDC_packdata_xiaomi_v2.dat \
     vendor/xiaomi/sea/proprietary/vendor/etc/camera/com.xiaomi.dcal.wd.1.golden:$(TARGET_COPY_OUT_VENDOR)/etc/camera/com.xiaomi.dcal.wd.1.golden \
@@ -194,8 +191,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sea/proprietary/vendor/etc/ecc_list_OP236.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP236.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
-    vendor/xiaomi/sea/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
-    vendor/xiaomi/sea/proprietary/vendor/etc/gbe.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gbe.cfg \
     vendor/xiaomi/sea/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
@@ -218,9 +213,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sea/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/init.insmod.mt6781.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6781.cfg \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/FastSwitch.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/FastSwitch.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/android.hardware.audio.service-aidl.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service-aidl.mediatek.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/android.hardware.drm-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.clearkey.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.beanpod.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
@@ -228,15 +221,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/android.hardware.media.c2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2-mediatek.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/display.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/display.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/dmc_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmc_core.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/em_hal_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hal_user.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/gpuserv-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gpuserv-default.rc \
@@ -248,7 +236,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/init.fmradio_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fmradio_drv.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/init.fpsgo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fpsgo.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/init.md_apps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.md_apps.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mi_thermald.rc \
@@ -263,36 +250,24 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/init.wfca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wfca.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/init.wod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wod.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/init.xcap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.xcap.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/mbrain-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mbrain-mtk-default.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/mi_ic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mi_ic.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/mi_ric.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mi_ric.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/microtrust.bp_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.bp_kmsetkey_ca.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/microtrust.init_thh.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.init_thh.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/microtrust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/mrm_isee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mrm_isee.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/mtk_lbs_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_lbs_service.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/mtk_pkm_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_pkm_service.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/mtk_storageproxyd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_storageproxyd.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/mtkpower_applist-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkpower_applist-mtk-default.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/networksetting.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/networksetting.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/v3avpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/v3avpud.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent-service.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms-service.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram-sevice.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.conf \
     vendor/xiaomi/sea/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt \
@@ -318,7 +293,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sea/proprietary/vendor/etc/ipsec/ssl/openssl.cnf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ssl/openssl.cnf \
     vendor/xiaomi/sea/proprietary/vendor/etc/ipsec/strongswan.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/strongswan.conf \
     vendor/xiaomi/sea/proprietary/vendor/etc/le_audio_codec_capabilities.xml:$(TARGET_COPY_OUT_VENDOR)/etc/le_audio_codec_capabilities.xml \
-    vendor/xiaomi/sea/proprietary/vendor/etc/linker.config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/linker.config.pb \
     vendor/xiaomi/sea/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/xiaomi/sea/proprietary/vendor/etc/mbrain/mbrain_runtime_appiot_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_appiot_config.bin \
     vendor/xiaomi/sea/proprietary/vendor/etc/mbrain/mbrain_runtime_autort_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_autort_config.bin \
@@ -357,7 +331,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sea/proprietary/vendor/etc/smsdbvisitor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smsdbvisitor.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/st21nfc_conf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st21nfc_conf.txt \
-    vendor/xiaomi/sea/proprietary/vendor/etc/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
     vendor/xiaomi/sea/proprietary/vendor/etc/thermal-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera.conf \
     vendor/xiaomi/sea/proprietary/vendor/etc/thermal-chg-only.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-chg-only.conf \
     vendor/xiaomi/sea/proprietary/vendor/etc/thermal-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-class0.conf \
@@ -458,6 +431,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sea/proprietary/vendor/thh/ta/isee_model.json:$(TARGET_COPY_OUT_VENDOR)/thh/ta/isee_model.json
 
 PRODUCT_PACKAGES += \
+    av-audio-types-aidl-V1-ndk \
     gps.default \
     kmsetkey.beanpod \
     sensors.dynamic_sensor_hal \
@@ -465,30 +439,24 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony-impl \
     libTEECommon \
     libakm \
-    libbluetooth_mtk \
-    libbt-vendor \
     libcapctrl \
     libcarrierconfig \
     libccci_util \
     libcharon-ss \
-    libcheckpid \
     libconnfem \
     libcrypto-md \
     libcurl-md \
     libcustom_nvram \
-    libdecrypt \
     libfile_op \
     libhidparser \
     libhwm \
     libhydra \
     libimsg_log \
     libipsec_ims_shr \
-    libkeystore-wifi-hidl \
     liblogwrap_vendor \
     libmbrainSDKv \
     libmmprofile \
     libmnetlink_v104 \
-    libmtcloader \
     libmtkcutils \
     libmtkhardware_legacy \
     libmtknetutils \
@@ -501,7 +469,6 @@ PRODUCT_PACKAGES += \
     liboemcrypto \
     libpcdbi \
     libpcdmr \
-    libpkm \
     librgbwlightsensor \
     libsimaka \
     libsimlock \
@@ -510,26 +477,19 @@ PRODUCT_PACKAGES += \
     libstfactory-vendor \
     libstrongswan \
     libsysenv \
-    libteeclientjni \
-    libteeclientjni@1.1 \
     libteei_daemon_vfs \
-    libthermalalgo \
     libthhclient \
     liburee_meta_drmkeyinstall \
     libverno \
-    libwapi \
     libwifinvramdata \
     libwo \
-    libwpa_client \
     libwvkeyboxext \
     libclearkeycasplugin \
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin \
-    meta_wifi_data \
     sensors.touch.detect \
     vendor.mediatek.hardware.mbrain-V6-ndk \
     vendor.mediatek.hardware.mbrainj-V1-ndk \
-    vendor.mediatek.hardware.netdagent-V1-ndk \
     vendor.mediatek.hardware.nvram-V1-ndk \
     vendor.mediatek.hardware.nwk_opt_new-V1-ndk \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
@@ -537,7 +497,6 @@ PRODUCT_PACKAGES += \
     libvolte_core_shr \
     libvolte_xdmc_shr \
     libvt_custom \
-    vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.rcs-V1-ndk \
     vendor.mediatek.hardware.rcs@2.0 \
     APUWareUtilsAidlServer \
@@ -561,10 +520,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.soundtrigger3-impl \
-    audio.bluetooth.default \
     audio.primary.default \
     audio.primary.mt6781 \
-    audio.r_submix.default \
     audio.r_submix.mt6781 \
     audio.usb.default \
     consumerir.mt6781 \
@@ -1129,7 +1086,6 @@ PRODUCT_PACKAGES += \
     libaal_sec \
     libaalservice \
     libacdk \
-    libaconfig_storage_read_api_cc \
     libaedv \
     libaiawb_moon \
     libaiawb_moon_model \
@@ -1140,8 +1096,6 @@ PRODUCT_PACKAGES += \
     libalCFR \
     libalLDC \
     libalhLDC \
-    libalsautils \
-    libalsautilsv2 \
     libanc_dc_base \
     libapmonitor_vendor \
     libappgamepq \
@@ -1161,9 +1115,7 @@ PRODUCT_PACKAGES += \
     libasn1c_core \
     libasn1c_mapi \
     libasn1c_mdmi \
-    libaudio_aidl_conversion_common_ndk \
     libaudio_param_parser-vnd \
-    libaudioaidlcommon \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
     libaudiocomponentengine_vendor \
@@ -1177,15 +1129,14 @@ PRODUCT_PACKAGES += \
     libaudiotoolkit_vendor \
     libaurisysdemo \
     libbessound_hd_mtk_vendor \
-    libbinderdebug \
     libblisrc32_vendor \
-    libbluetooth_audio_session \
-    libbluetooth_audio_session_aidl \
     libbluetooth_audio_session_aidl_mtk \
     libbluetooth_audio_session_mediatek \
+    libbluetooth_mtk \
     libbluetooth_mtk_pure \
     libbluetooth_relayer \
     libbluetoothem_mtk \
+    libbt-vendor \
     libbwc \
     libcam.afhal \
     libcam.chdr \
@@ -1253,25 +1204,17 @@ PRODUCT_PACKAGES += \
     libchromanr \
     libcmdl \
     libcmdl_ndk.mtk.vndk \
-    libcodec2_aidl \
-    libcodec2_fsr \
-    libcodec2_hal_common \
-    libcodec2_hidl@1.1 \
-    libcodec2_hidl@1.2 \
-    libcodec2_hidl_plugin \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
-    libcodec2_soft_common \
     libcodec2_vpp_fa_plugin \
     libcodec2_vpp_mi_plugin \
     libcodec2_vpp_qt_plugin \
     libcodec2_vpp_rs_plugin \
     libcolortempmode \
     libcomposer_ext \
-    libcppbor \
-    libcppcose_rkp \
     libcvsd_mtk \
+    libdecrypt \
     libdip_drv \
     libdip_postproc \
     libdisplayfeature \
@@ -1292,7 +1235,6 @@ PRODUCT_PACKAGES += \
     libfeatureiodrv_mem \
     libfft_vendor \
     libfgauge_gm30 \
-    libflatbuffers-cpp \
     libflatmode \
     libforkexecwrap \
     libformatter \
@@ -1323,15 +1265,11 @@ PRODUCT_PACKAGES += \
     libispcameraca \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
-    libkeymaster4 \
-    libkeymaster41 \
-    libkeymaster4_1support \
     libkeystore-engine-wifi-hidl \
+    libkeystore-wifi-hidl \
     libkmsetkey \
     libladder \
     liblpcnr \
-    libmediautils_vendor \
-    libmeminfo \
     libmfllcore \
     libmiBrightness \
     libmiSensorCtrl \
@@ -1345,14 +1283,12 @@ PRODUCT_PACKAGES += \
     libmipc \
     libmiriskmanager_isee \
     libmisight \
-    libmmagent \
     libmml \
-    libmmlpqImpl \
-    libmnl \
     libmp4enc_sa.ca7 \
     libmpbase \
     libmsbc_mtk \
     libmsnr \
+    libmtcloader \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
     libmtk_drvb \
@@ -1452,10 +1388,9 @@ PRODUCT_PACKAGES += \
     libnxp_extamp_intf \
     libpaperMode \
     libperfctl_vendor \
-    libpowerhal \
+    libpkm \
     libpowerhalwrap_vendor \
     libpq_cust_base \
-    libpq_sec \
     libpqframework \
     libpqhdrmetaparser \
     libpqparamparser \
@@ -1466,29 +1401,24 @@ PRODUCT_PACKAGES += \
     librcs_volte_core \
     librilfusion \
     librt_extamp_intf \
-    libruy \
-    libscltm \
     libsdr2hdr \
     libsdrparser \
     libsensor_custom \
     libsensorndkbridge \
-    libsfplugin_ccodec_utils \
     libsilkybrightnesscore \
-    libsoft_attestation_cert \
     libspeech_enh_lib \
     libspeechparser_vendor \
     libsre \
-    libstagefright_aidl_bufferpool2 \
-    libstagefright_bufferpool@2.0.1 \
     libstereoinfoaccessor_vsdof \
     libstorage_otp \
     libswtcc \
+    libteeclientjni \
+    libteeclientjni@1.1 \
     libtflite_mtk \
+    libthermalalgo \
     libthha \
-    libtinyalsav2 \
     libtrm \
     libtruetone \
-    libtrusty \
     libudf \
     libvcodec_oal \
     libvcodec_utility_v3a \
@@ -1503,11 +1433,14 @@ PRODUCT_PACKAGES += \
     libvidhance_calibration_tool \
     libvidhance_stabilizer \
     libvpu5 \
+    libwapi \
     libwifi-hal-mtk \
     libwifical \
     libwifinvram \
     libwifitest \
+    libwpa_client \
     libwpfa \
+    meta_wifi_data \
     mtk_lbs_service-impl \
     libmtkcam_streaminfo_plugin-p1stt \
     nwk_opt_imp \
@@ -1529,11 +1462,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.framework.mtksf_ext-V3-ndk \
     vendor.mediatek.hardware.apuware.utils-V1-ndk \
     vendor.mediatek.hardware.atci-V1-ndk \
-    vendor.mediatek.hardware.audio-V1-ndk \
     vendor.mediatek.hardware.audio@6.1 \
-    vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.camera.atms-V1-ndk \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice-V1-ndk \
@@ -1550,14 +1479,11 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.engineermode-V2-ndk \
     vendor.mediatek.hardware.gnss-V2-ndk \
     vendor.mediatek.hardware.gpuserv-V2-ndk \
-    vendor.mediatek.hardware.lbs-V1-ndk \
-    vendor.mediatek.hardware.lbs@1.0 \
     vendor.mediatek.hardware.mmagent-V1-ndk \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mms-V1-ndk \
-    vendor.mediatek.hardware.mtkpower-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.cap-V1-ndk \
@@ -1576,6 +1502,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkradioex.sim-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.voice-V1-ndk \
+    vendor.mediatek.hardware.netdagent-V1-ndk \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
     vendor.mediatek.hardware.power@1.1 \
@@ -1598,7 +1525,6 @@ PRODUCT_PACKAGES += \
     vendor.microtrust.hardware.soter@1.0 \
     vendor.microtrust.hardware.thh@2.0 \
     vpp_hdrmeta_handler_plugin \
-    vendor.mediatek.hardware.mtkradioex@3.0 \
     libimsma \
     libimsma_adapt \
     libimsma_rtp \
@@ -1608,31 +1534,23 @@ PRODUCT_PACKAGES += \
     mediatek-ims-base \
     mediatek-ims-common \
     mediatek-ims-extension-plugin \
-    CommandService.xml \
-    FastSwitch.xml \
     android.hardware.audio.effect.service-aidl.xml \
     android.hardware.audio.service-aidl.xml \
-    android.hardware.drm-service.clearkey.xml \
     android.hardware.gatekeeper-service.beanpod.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
-    android.hardware.sensors-multihal.xml \
     android.hardware.tetheroffload-V1-service.xml \
-    bluetooth_audio.xml \
-    em_hal_service.xml \
+    bluetooth_audio_mtk.xml \
     gnss-mtk.xml \
     manifest_allocator.xml \
     manifest_apuware_utils_aidl.xml \
     manifest_hwcomposer.xml \
     manifest_media_c2_default.xml \
-    manifest_thh.xml \
     mapper.mediatek.xml \
     memtrack-mediatek.xml \
-    mrm.xml \
     mtk_lbs_service.xml \
     mtkpower_applist-mtk-default.xml \
     SoterProvisioningTool \
     atcid \
-    audiocmdservice_atci \
     batterysecret \
     bip \
     bp_kmsetkey_ca \
@@ -1643,24 +1561,15 @@ PRODUCT_PACKAGES += \
     dconfig \
     dexecutor \
     displayfeature \
-    dmabuf_dump \
     dmc_core \
-    doeapp-memtester \
-    doeapp-sat \
     dreport \
-    dtc_vendor \
     em_hidl \
     epdg_wod \
-    factory \
-    ffu \
     fuelgauged \
     fuelgauged_nvram \
-    getfattr \
-    getopt \
     gsm0710muxd \
     android.hardware.audio.service-aidl.mediatek \
     android.hardware.contexthub-service.tinysys \
-    android.hardware.drm-service.clearkey \
     android.hardware.gatekeeper-service.beanpod \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.allocator-V2-service-mediatek \
@@ -1670,7 +1579,6 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.memtrack-service.mediatek \
     android.hardware.neuralnetworks-shim-service-mtk-legacy \
-    android.hardware.sensors-service.multihal \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
@@ -1680,46 +1588,28 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmlpq@V1-service \
     vendor.mediatek.hardware.mms-service \
     vendor.mediatek.hardware.nvram-service \
-    vendor.mediatek.hardware.nwk_opt@1.0-service \
     vendor.mediatek.hardware.pq_aidl-service \
     vendor.microtrust.hardware.soter@1.0-service \
     vendor.microtrust.hardware.thh@2.0-service \
     vtservice_aidl \
-    wpa_supplicant \
     init_thh \
     iperf \
     ipsec_mon \
-    iwlist \
-    iwpriv \
     jpegtool \
     jxnosfastswitch \
     lib3a.ccu.ddr \
     lib3a.ccu.dm \
     lib3a.ccu.pm \
-    meta_tst \
     mi_thermald \
     mnld \
-    mrdump_tool \
-    mrmd_isee \
     mt6660_calibration \
     mtk_agpsd \
     mtk_lbs_service \
-    mtk_pkm_service \
-    mtk_plpath_utils_ota \
-    mtk_storageproxyd \
-    netdagent \
-    netdc \
-    nfcstackp-vendor \
     nvram_daemon \
     rcs_volte_stack \
-    recordevent \
-    replayevent \
     rt5512_calibration \
     rttv \
-    setfattr \
-    starter \
     stp_dump3 \
-    stroke \
     teei_daemon \
     thermalloadalgod \
     trusty-ut-ctrl \
@@ -1734,7 +1624,6 @@ PRODUCT_PACKAGES += \
     wfca \
     wmt_launcher \
     wmt_loader \
-    xcap \
     android.hardware.audio.parameter_parser.service
 
 PRODUCT_BOOT_JARS += \
