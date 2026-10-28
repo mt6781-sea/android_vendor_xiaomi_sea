@@ -465,7 +465,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony-impl \
     libTEECommon \
     libakm \
-    libappgamepq \
     libbluetooth_mtk \
     libbt-vendor \
     libcapctrl \
@@ -493,7 +492,6 @@ PRODUCT_PACKAGES += \
     libmtkcutils \
     libmtkhardware_legacy \
     libmtknetutils \
-    libmtkperf_client_vendor \
     libmtkproperty \
     libmtkrillog \
     libmtksysutils \
@@ -504,9 +502,7 @@ PRODUCT_PACKAGES += \
     libpcdbi \
     libpcdmr \
     libpkm \
-    libpq_cust_base \
     librgbwlightsensor \
-    libscltm \
     libsimaka \
     libsimlock \
     libsimmelock \
@@ -1148,6 +1144,7 @@ PRODUCT_PACKAGES += \
     libalsautilsv2 \
     libanc_dc_base \
     libapmonitor_vendor \
+    libappgamepq \
     libapu_mdw \
     libarcsoft_beautyshot \
     libarcsoft_dualcam_refocus_image \
@@ -1436,6 +1433,7 @@ PRODUCT_PACKAGES += \
     libmtklimiter_vendor \
     libmtkmipc-ril \
     libmtknetcap \
+    libmtkperf_client_vendor \
     libmtkrilutils \
     libmtkshifter_vendor \
     libmtkspparser \
@@ -1456,6 +1454,7 @@ PRODUCT_PACKAGES += \
     libperfctl_vendor \
     libpowerhal \
     libpowerhalwrap_vendor \
+    libpq_cust_base \
     libpq_sec \
     libpqframework \
     libpqhdrmetaparser \
@@ -1468,6 +1467,7 @@ PRODUCT_PACKAGES += \
     librilfusion \
     librt_extamp_intf \
     libruy \
+    libscltm \
     libsdr2hdr \
     libsdrparser \
     libsensor_custom \
@@ -1508,12 +1508,6 @@ PRODUCT_PACKAGES += \
     libwifinvram \
     libwifitest \
     libwpfa \
-    libmmagent \
-    libmmlpqImpl \
-    libneuron_adapter_mgvi \
-    libpq_sec \
-    libpqparamparser \
-    libscltm \
     mtk_lbs_service-impl \
     libmtkcam_streaminfo_plugin-p1stt \
     nwk_opt_imp \
@@ -1609,8 +1603,6 @@ PRODUCT_PACKAGES += \
     libimsma_adapt \
     libimsma_rtp \
     libimsma_socketwrapper \
-    vendor.mediatek.hardware.videotelephony-V1-ndk \
-    vendor.mediatek.hardware.videotelephony@1.0_vendor \
     com.google.android.widevine.nonupdatable \
     SoterService \
     mediatek-ims-base \
