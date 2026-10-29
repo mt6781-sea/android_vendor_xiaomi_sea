@@ -314,6 +314,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sea/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/xiaomi/sea/proprietary/vendor/etc/partition_permission.sh:$(TARGET_COPY_OUT_VENDOR)/etc/partition_permission.sh \
+    vendor/xiaomi/sea/proprietary/vendor/etc/permissions/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
@@ -436,9 +437,9 @@ PRODUCT_PACKAGES += \
     kmsetkey.beanpod \
     sensors.dynamic_sensor_hal \
     vendor.mediatek.hardware.nvram-impl \
-    vendor.mediatek.hardware.videotelephony-impl \
     libTEECommon \
     libakm \
+    libbwc \
     libcapctrl \
     libcarrierconfig \
     libccci_util \
@@ -452,7 +453,10 @@ PRODUCT_PACKAGES += \
     libhwm \
     libhydra \
     libimsg_log \
+    libion_mtk \
+    libion_ulit \
     libipsec_ims_shr \
+    libladder \
     liblogwrap_vendor \
     libmbrainSDKv \
     libmmprofile \
@@ -480,22 +484,27 @@ PRODUCT_PACKAGES += \
     libteei_daemon_vfs \
     libthhclient \
     liburee_meta_drmkeyinstall \
+    libvcodec_oal \
+    libvcodec_utility_v3a \
+    libvcodecdrv_v3a \
     libverno \
+    libvpu5 \
     libwifinvramdata \
     libwo \
+    libwvkeybox \
     libwvkeyboxext \
     libclearkeycasplugin \
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin \
+    libmtk_drvb \
     sensors.touch.detect \
     vendor.mediatek.hardware.mbrain-V6-ndk \
     vendor.mediatek.hardware.mbrainj-V1-ndk \
     vendor.mediatek.hardware.nvram-V1-ndk \
     vendor.mediatek.hardware.nwk_opt_new-V1-ndk \
-    vendor.mediatek.hardware.videotelephony-V1-ndk \
-    wechat.beanpod \
     libvolte_core_shr \
     libvolte_xdmc_shr \
+    libvpudv3a_vcodec \
     libvt_custom \
     vendor.mediatek.hardware.rcs-V1-ndk \
     vendor.mediatek.hardware.rcs@2.0 \
@@ -503,6 +512,9 @@ PRODUCT_PACKAGES += \
     AVCSecureVdecCA \
     HEVCSecureVdecCA \
     VP9SecureVdecCA \
+    android.hardware.audio.core-impl-mediatek \
+    android.hardware.bluetooth.audio-impl-mediatek \
+    android.hardware.memtrack-V1-ndk_prebuilt \
     arm.graphics-V5-ndk \
     arm.mali.platform-V2-ndk \
     chre_atoms_log \
@@ -517,8 +529,11 @@ PRODUCT_PACKAGES += \
     gc02m1_macro_aac_mipi_raw_tuning \
     gc02m1_macro_ofilm_mipi_raw_IdxMgr \
     gc02m1_macro_ofilm_mipi_raw_tuning \
-    android.hardware.bluetooth.audio@2.0-impl \
-    android.hardware.bluetooth.audio@2.1-impl \
+    android.hardware.audio.effect.aidl-impl-mediatek \
+    android.hardware.camera.provider@2.6-impl-mediatek \
+    android.hardware.gnss-impl-mediatek \
+    android.hardware.graphics.allocator-V2-mediatek \
+    android.hardware.sensors@2.X-subhal-mediatek \
     android.hardware.soundtrigger3-impl \
     audio.primary.default \
     audio.primary.mt6781 \
@@ -537,8 +552,6 @@ PRODUCT_PACKAGES += \
     sensors.mt6781 \
     sound_trigger.primary.default \
     vendor.mediatek.hardware.audio-impl \
-    vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
-    vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     vendor.mediatek.hardware.camera.atms_aidl@1.0-impl \
     vendor.mediatek.hardware.camera.bgservice_aidl@1.0-impl \
     vendor.mediatek.hardware.camera.ccap@1.0-impl \
@@ -547,6 +560,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.postproc_aidl@1.0-impl \
     vendor.mediatek.hardware.gnss-impl \
     vendor.mediatek.hardware.pq_aidl-impl \
+    vendor.mediatek.hardware.videotelephony-impl \
     vulkan.mali \
     imx355_ultra_ofilm_mipi_raw_IdxMgr \
     imx355_ultra_ofilm_mipi_raw_tuning \
@@ -1078,7 +1092,6 @@ PRODUCT_PACKAGES += \
     libSonyIMX519PdafLibraryWrapper \
     lib_bsscore \
     lib_iir \
-    lib_power_applist \
     libaaa_ltm \
     libaaa_ltmx \
     libaal_cust \
@@ -1096,6 +1109,7 @@ PRODUCT_PACKAGES += \
     libalCFR \
     libalLDC \
     libalhLDC \
+    libalsautils-v34 \
     libanc_dc_base \
     libapmonitor_vendor \
     libappgamepq \
@@ -1115,6 +1129,7 @@ PRODUCT_PACKAGES += \
     libasn1c_core \
     libasn1c_mapi \
     libasn1c_mdmi \
+    libaudio_aidl_conversion_common_ndk_prebuilt \
     libaudio_param_parser-vnd \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
@@ -1137,7 +1152,7 @@ PRODUCT_PACKAGES += \
     libbluetooth_relayer \
     libbluetoothem_mtk \
     libbt-vendor \
-    libbwc \
+    libc++_shared \
     libcam.afhal \
     libcam.chdr \
     libcam.feature_utils \
@@ -1204,6 +1219,7 @@ PRODUCT_PACKAGES += \
     libchromanr \
     libcmdl \
     libcmdl_ndk.mtk.vndk \
+    libcodec2_fsr \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
@@ -1237,7 +1253,7 @@ PRODUCT_PACKAGES += \
     libfgauge_gm30 \
     libflatmode \
     libforkexecwrap \
-    libformatter \
+    libformatter_mtk \
     libfsmsmartpaparse \
     libgamehdr \
     libged \
@@ -1260,15 +1276,12 @@ PRODUCT_PACKAGES += \
     libimageio_plat_drv \
     libimageio_plat_pipe \
     libimgsensorca \
-    libion_mtk \
-    libion_ulit \
     libispcameraca \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl \
     libkmsetkey \
-    libladder \
     liblpcnr \
     libmfllcore \
     libmiBrightness \
@@ -1281,9 +1294,9 @@ PRODUCT_PACKAGES += \
     libmibokeh_mt6873 \
     libminiui \
     libmipc \
-    libmiriskmanager_isee \
     libmisight \
     libmml \
+    libmnl_mtk \
     libmp4enc_sa.ca7 \
     libmpbase \
     libmsbc_mtk \
@@ -1291,7 +1304,6 @@ PRODUCT_PACKAGES += \
     libmtcloader \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
-    libmtk_drvb \
     libmtkcam.atmseventmgr \
     libmtkcam.debugwrapper \
     libmtkcam.eventcallback \
@@ -1369,7 +1381,6 @@ PRODUCT_PACKAGES += \
     libmtklimiter_vendor \
     libmtkmipc-ril \
     libmtknetcap \
-    libmtkperf_client_vendor \
     libmtkrilutils \
     libmtkshifter_vendor \
     libmtkspparser \
@@ -1380,21 +1391,20 @@ PRODUCT_PACKAGES += \
     libmvpu_wrapper \
     libneuralnetworks_sl_driver_mtk_legacy_prebuilt \
     libneuroeara \
-    libneuron_adapter_mgvi \
-    libnir_neon_driver \
     libnir_neon_driver_ndk.mtk.vndk \
     libnotifyaudiohal \
     libnputils \
     libnxp_extamp_intf \
     libpaperMode \
     libperfctl_vendor \
+    libpixelflinger \
     libpkm \
-    libpowerhalwrap_vendor \
     libpq_cust_base \
     libpqframework \
     libpqhdrmetaparser \
     libpqparamparser \
     libpqsharememory \
+    libpqsharememory_mtk \
     libpqtuning \
     libpqxmlparser \
     libratconfig \
@@ -1417,13 +1427,11 @@ PRODUCT_PACKAGES += \
     libtflite_mtk \
     libthermalalgo \
     libthha \
+    libtranslator_utils \
     libtrm \
     libtruetone \
     libudf \
-    libvcodec_oal \
-    libvcodec_utility_v3a \
     libvcodecdrv_header_stub \
-    libvcodecdrv_v3a \
     libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
     libvia-ril \
     libviamipc-ril \
@@ -1432,7 +1440,6 @@ PRODUCT_PACKAGES += \
     libvidhance \
     libvidhance_calibration_tool \
     libvidhance_stabilizer \
-    libvpu5 \
     libwapi \
     libwifi-hal-mtk \
     libwifical \
@@ -1441,6 +1448,12 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     libwpfa \
     meta_wifi_data \
+    libmmagent \
+    libmmlpqImpl \
+    libneuron_adapter_mgvi \
+    libnir_neon_driver \
+    libpq_sec \
+    libscltm \
     mtk_lbs_service-impl \
     libmtkcam_streaminfo_plugin-p1stt \
     nwk_opt_imp \
@@ -1460,6 +1473,8 @@ PRODUCT_PACKAGES += \
     s5khm2sp_main_sunny_mipi_raw_tuning \
     vendor.mediatek.framework.mtksf_ext-V2-ndk \
     vendor.mediatek.framework.mtksf_ext-V3-ndk \
+    vendor.mediatek.hardware.apmonitor-V1-ndk \
+    vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.apuware.utils-V1-ndk \
     vendor.mediatek.hardware.atci-V1-ndk \
     vendor.mediatek.hardware.audio@6.1 \
@@ -1479,6 +1494,9 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.engineermode-V2-ndk \
     vendor.mediatek.hardware.gnss-V2-ndk \
     vendor.mediatek.hardware.gpuserv-V2-ndk \
+    vendor.mediatek.hardware.lbs-V1-ndk \
+    vendor.mediatek.hardware.mdmonitor-V1-ndk \
+    vendor.mediatek.hardware.mdmonitor@1.0 \
     vendor.mediatek.hardware.mmagent-V1-ndk \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
@@ -1525,21 +1543,32 @@ PRODUCT_PACKAGES += \
     vendor.microtrust.hardware.soter@1.0 \
     vendor.microtrust.hardware.thh@2.0 \
     vpp_hdrmeta_handler_plugin \
+    wechat.beanpod \
+    libcomutils \
     libimsma \
     libimsma_adapt \
     libimsma_rtp \
     libimsma_socketwrapper \
+    libsignal \
+    libsink-mtk \
+    libsource \
+    libvcodec_cap \
+    libvcodec_capenc \
+    libvt_avsync \
+    vendor.mediatek.hardware.videotelephony-V1-ndk \
+    vendor.mediatek.hardware.videotelephony@1.0 \
     com.google.android.widevine.nonupdatable \
     SoterService \
     mediatek-ims-base \
     mediatek-ims-common \
     mediatek-ims-extension-plugin \
     android.hardware.audio.effect.service-aidl.xml \
-    android.hardware.audio.service-aidl.xml \
+    android.hardware.audio.service-aidl.mediatek.xml \
     android.hardware.gatekeeper-service.beanpod.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.tetheroffload-V1-service.xml \
     bluetooth_audio_mtk.xml \
+    gnss-aosp-mtk.xml \
     gnss-mtk.xml \
     manifest_allocator.xml \
     manifest_apuware_utils_aidl.xml \
@@ -1558,12 +1587,8 @@ PRODUCT_PACKAGES += \
     ccci_rpcd \
     charon \
     consumerird \
-    dconfig \
-    dexecutor \
     displayfeature \
     dmc_core \
-    dreport \
-    em_hidl \
     epdg_wod \
     fuelgauged \
     fuelgauged_nvram \
@@ -1596,7 +1621,6 @@ PRODUCT_PACKAGES += \
     iperf \
     ipsec_mon \
     jpegtool \
-    jxnosfastswitch \
     lib3a.ccu.ddr \
     lib3a.ccu.dm \
     lib3a.ccu.pm \
@@ -1625,6 +1649,16 @@ PRODUCT_PACKAGES += \
     wmt_launcher \
     wmt_loader \
     android.hardware.audio.parameter_parser.service
+
+PRODUCT_PACKAGES += \
+    vendor_lib_libmtk_drvb_so \
+    vendor_lib64_libmmagent_so \
+    vendor_lib64_libmmlpqImpl_so \
+    vendor_lib64_libmtk_drvb_so \
+    vendor_lib64_libneuron_adapter_mgvi_so \
+    vendor_lib64_libnir_neon_driver_so \
+    vendor_lib64_libpq_sec_so \
+    vendor_lib64_libscltm_so
 
 PRODUCT_BOOT_JARS += \
     system_ext:mediatek-ims-base
