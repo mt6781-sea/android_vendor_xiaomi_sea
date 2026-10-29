@@ -1396,7 +1396,6 @@ PRODUCT_PACKAGES += \
     libnputils \
     libnxp_extamp_intf \
     libpaperMode \
-    libperfctl_vendor \
     libpixelflinger \
     libpkm \
     libpq_cust_base \
