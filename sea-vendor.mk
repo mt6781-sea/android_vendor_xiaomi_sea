@@ -251,7 +251,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
-    vendor/xiaomi/sea/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/microtrust.bp_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.bp_kmsetkey_ca.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/microtrust.init_thh.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.init_thh.rc \
     vendor/xiaomi/sea/proprietary/vendor/etc/init/microtrust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.rc \
@@ -308,7 +307,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sea/proprietary/vendor/etc/mbrain/mbrain_runtime_spu_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_spu_config.bin \
     vendor/xiaomi/sea/proprietary/vendor/etc/mbrain/mbrain_runtime_video_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_video_config.bin \
     vendor/xiaomi/sea/proprietary/vendor/etc/mbrain/mbrain_static_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_static_config.bin \
-    vendor/xiaomi/sea/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
     vendor/xiaomi/sea/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/xiaomi/sea/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
     vendor/xiaomi/sea/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
@@ -316,7 +314,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sea/proprietary/vendor/etc/partition_permission.sh:$(TARGET_COPY_OUT_VENDOR)/etc/partition_permission.sh \
     vendor/xiaomi/sea/proprietary/vendor/etc/permissions/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
-    vendor/xiaomi/sea/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml \
     vendor/xiaomi/sea/proprietary/vendor/etc/qc_Global_3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qc_Global_3.xml \
@@ -438,7 +435,6 @@ PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal \
     vendor.mediatek.hardware.nvram-impl \
     libTEECommon \
-    libakm \
     libbwc \
     libcapctrl \
     libcarrierconfig \
@@ -548,7 +544,6 @@ PRODUCT_PACKAGES += \
     id_attestation.beanpod \
     libmbrainImpl \
     mapper.mediatek \
-    sensors.elliptic@2.0 \
     sensors.mt6781 \
     sound_trigger.primary.default \
     vendor.mediatek.hardware.audio-impl \
@@ -1391,13 +1386,10 @@ PRODUCT_PACKAGES += \
     libmvpu_wrapper \
     libneuralnetworks_sl_driver_mtk_legacy_prebuilt \
     libneuroeara \
-    libnir_neon_driver_ndk.mtk.vndk \
-    libnotifyaudiohal \
     libnputils \
     libnxp_extamp_intf \
     libpaperMode \
     libpixelflinger \
-    libpkm \
     libpq_cust_base \
     libpqframework \
     libpqhdrmetaparser \
@@ -1415,7 +1407,6 @@ PRODUCT_PACKAGES += \
     libsensor_custom \
     libsensorndkbridge \
     libsilkybrightnesscore \
-    libspeech_enh_lib \
     libspeechparser_vendor \
     libsre \
     libstereoinfoaccessor_vsdof \
@@ -1566,7 +1557,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper-service.beanpod.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.tetheroffload-V1-service.xml \
-    bluetooth_audio_mtk.xml \
     gnss-aosp-mtk.xml \
     gnss-mtk.xml \
     manifest_allocator.xml \
@@ -1574,7 +1564,6 @@ PRODUCT_PACKAGES += \
     manifest_hwcomposer.xml \
     manifest_media_c2_default.xml \
     mapper.mediatek.xml \
-    memtrack-mediatek.xml \
     mtk_lbs_service.xml \
     mtkpower_applist-mtk-default.xml \
     SoterProvisioningTool \
@@ -1631,7 +1620,6 @@ PRODUCT_PACKAGES += \
     nvram_daemon \
     rcs_volte_stack \
     rt5512_calibration \
-    rttv \
     stp_dump3 \
     teei_daemon \
     thermalloadalgod \

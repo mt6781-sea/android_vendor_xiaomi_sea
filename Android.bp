@@ -270,47 +270,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libakm",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libakm.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libakm.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libbwc",
     owner: "xiaomi",
     strip: {
@@ -4414,38 +4373,6 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.common@1.2",
                 "liblog",
                 "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "sensors.elliptic@2.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/sensors.elliptic@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libbase",
-                "liblog",
-                "libutils",
-                "libnotifyaudiohal",
-                "android.hardware.sensors@2.0",
-                "android.hardware.sensors@2.0-ScopedWakelock",
                 "libc++",
                 "libc",
                 "libm",
@@ -27865,63 +27792,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libnir_neon_driver_ndk.mtk.vndk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libnotifyaudiohal",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libnotifyaudiohal.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libxml2",
-                "libbinder_ndk",
-                "libfmq",
-                "android.hardware.audio.core-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libnputils",
     owner: "xiaomi",
     strip: {
@@ -28035,43 +27905,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpkm",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libpkm.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libdecrypt",
-                "libpcap",
-                "liblog",
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "vendor.mediatek.hardware.mdmonitor@1.0",
-                "libapmonitor_vendor",
-                "libicd_decoder",
-                "libbinder_ndk",
-                "vendor.mediatek.hardware.mdmonitor-V1-ndk",
                 "libc",
                 "libm",
                 "libdl",
@@ -28601,30 +28434,6 @@ cc_prebuilt_library_shared {
                 "libhardware_legacy",
                 "libtinyxml2-v34",
                 "libpqxmlparser",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libspeech_enh_lib",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libspeech_enh_lib.so",
-            ],
-            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -33145,15 +32954,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "bluetooth_audio_mtk.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/bluetooth_audio_mtk.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "gnss-aosp-mtk.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/gnss-aosp-mtk.xml",
@@ -33211,15 +33011,6 @@ prebuilt_etc_xml {
     name: "mapper.mediatek.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/mapper.mediatek.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "memtrack-mediatek.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/memtrack-mediatek.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -34920,34 +34711,6 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "rttv",
-    owner: "xiaomi",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/rttv",
-            ],
-            shared_libs: [
-                "libaedv",
-                "libcutils",
-                "liblog",
-                "libz",
-                "libc",
-                "libdl",
-                "libm",
-                "libc++",
-            ],
-        },
-    },
-    compile_multilib: "32",
     strip: {
         none: true,
     },
